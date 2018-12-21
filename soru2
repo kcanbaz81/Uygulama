@@ -1,0 +1,51 @@
+girilen = str(input("Bir cümle giriniz: "))
+print("tersten: \n"+girilen[::-1])
+print("Kelime kelime bölme")
+girilensplit = girilen.split()
+print(girilensplit)
+print("Kelimelerin harf sayıları")
+for i in range(len(girilensplit)):
+    print(len(girilensplit[i]))
+print("Kendi içinde ters çevirme")
+for i in range(len(girilensplit)):
+    kelime = girilensplit[i]
+    kelime1 = kelime[::-1]
+    print(kelime1)
+
+    sesli_harfler = "aeıioöuü"
+    sessiz_harfler = "bcçdfgğhjklmnprsştvyz"
+
+    sesliler = " "
+    sessizler = " "
+for i in girilen:
+    if i in sesli_harfler:
+        sesliler += i
+    else:
+        sessizler += i
+
+print("sesli harfler: ", sesliler)
+print("sessiz harfler: ", sessizler)
+
+kalınsesli = "aıou"
+incesesli = "ieöü"
+
+kalınsesli = " "
+incesesli = " "
+print("BÜYÜK ÜNLÜ UYUMUNA")
+for i in girilen:
+    i==girilen
+    if kalınsesli==i:
+        print("Uyar")
+        break
+    elif incesesli==i:
+        print("Uyar")
+        break
+    elif kalınsesli!=i:
+        print("Uymaz")
+        break
+    elif incesesli!=i:
+        print("Uymaz")
+        break
+    else:
+        print("Uymaz")
+        break
