@@ -1,0 +1,10 @@
+dizi = []
+for i in range(5):
+     gelen = input("Bir sayı giriniz :")
+     dizi.append(gelen)
+     dizi.sort(reverse=True)
+     print(dizi)
+
+dosya = open(r"C:\sıralama\sıralama.txt","w")
+for j in range(5):
+     dosya.write(dizi[j]  + " ")
