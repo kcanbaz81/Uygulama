@@ -1,0 +1,5 @@
+soru = 0
+for n in range(1,1001):
+    soru=soru+n**n
+x=soru%1000000000
+print(x)
